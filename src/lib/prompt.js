@@ -10,7 +10,7 @@ class PromptsManager {
         message: '╚═════════════════ AUTHENTICATION METHOD ══════════════════╝\nSelect authentication method:',
         choices: [
           { name: 'JWT + Custom Auth', value: 'jwt' },
-          { name: 'Auth0 Integration', value: 'auth0' },
+          { name: chalk.gray('Auth0 Integration'), value: 'auth0', disabled: '- coming soon' },
           { name: chalk.gray('AWS Cognito'), value: 'cognito', disabled: '- coming soon' },
           { name: chalk.gray('Supabase Auth'), value: 'supabase', disabled: '- coming soon' }
         ]
@@ -31,11 +31,11 @@ class PromptsManager {
         message: '╚═════════════════ ADDITIONAL MODULES ══════════════════╝\nSelect additional modules:',
         choices: [
           { name: 'Swagger/OpenAPI docs', value: 'docs' },
-          { name: 'File processing (OCR)', value: 'ocr' },
+          { name: chalk.gray('File processing (OCR)'), value: 'ocr', disabled: '- coming soon' },
           { name: 'Background jobs (BullMQ)', value: 'bullmq' },
-          { name: 'Real-time features (WebSocket)', value: 'websocket' },
+          { name: chalk.gray('Real-time features (WebSocket)'), value: 'websocket', disabled: '- coming soon' },
           { name: 'AI integration (Gemini)', value: 'gemini-ai' },
-          { name: 'Payment processing (Stripe)', value: 'stripe' },
+          { name: chalk.gray('Payment processing (Stripe)'), value: 'stripe', disabled: '- coming soon' },
           { name: 'Email system (Resend)', value: 'mail' },
           { name: chalk.gray('Analytics (Mixpanel)'), value: 'analytics', disabled: '- coming soon' },
           { name: chalk.gray('Logs (Sentry)'), value: 'sentry', disabled: '- coming soon' }
