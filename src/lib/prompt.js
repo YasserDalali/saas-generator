@@ -29,14 +29,15 @@ class PromptsManager {
         type: 'checkbox',
         name: 'modules',
         message: '╚═════════════════ ADDITIONAL MODULES ══════════════════╝\nSelect additional modules:',
+        pageSize: 6,
         choices: [
           { name: 'Swagger/OpenAPI docs', value: 'docs' },
-          { name: chalk.gray('File processing (OCR)'), value: 'ocr', disabled: '- coming soon' },
           { name: 'Background jobs (BullMQ)', value: 'bullmq' },
-          { name: chalk.gray('Real-time features (WebSocket)'), value: 'websocket', disabled: '- coming soon' },
           { name: 'AI integration (Gemini)', value: 'gemini-ai' },
-          { name: chalk.gray('Payment processing (Stripe)'), value: 'stripe', disabled: '- coming soon' },
           { name: 'Email system (Resend)', value: 'mail' },
+          { name: chalk.gray('Real-time features (WebSocket)'), value: 'websocket', disabled: '- coming soon' },
+          { name: chalk.gray('Payment processing (Stripe)'), value: 'stripe', disabled: '- coming soon' },
+          { name: chalk.gray('File processing (OCR)'), value: 'ocr', disabled: '- coming soon' },
           { name: chalk.gray('Analytics (Mixpanel)'), value: 'analytics', disabled: '- coming soon' },
           { name: chalk.gray('Logs (Sentry)'), value: 'sentry', disabled: '- coming soon' }
         ]
