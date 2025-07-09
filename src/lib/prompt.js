@@ -30,13 +30,13 @@ class PromptsManager {
         name: 'modules',
         message: '╚═════════════════ ADDITIONAL MODULES ══════════════════╝\nSelect additional modules:',
         choices: [
-          { name: 'Swagger/OpenAPI docs', value: 'swagger' },
+          { name: 'Swagger/OpenAPI docs', value: 'docs' },
           { name: 'File processing (OCR)', value: 'ocr' },
           { name: 'Background jobs (BullMQ)', value: 'bullmq' },
           { name: 'Real-time features (WebSocket)', value: 'websocket' },
-          { name: 'AI integration (Gemini)', value: 'ai' },
+          { name: 'AI integration (Gemini)', value: 'gemini-ai' },
           { name: 'Payment processing (Stripe)', value: 'stripe' },
-          { name: 'Email system (Resend)', value: 'email' },
+          { name: 'Email system (Resend)', value: 'mail' },
           { name: chalk.gray('Analytics (Mixpanel)'), value: 'analytics', disabled: '- coming soon' },
           { name: chalk.gray('Logs (Sentry)'), value: 'sentry', disabled: '- coming soon' }
         ]

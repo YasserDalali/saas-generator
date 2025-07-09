@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bullmq": "^4.12.7",
+    "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/ioredis": "^5.0.0"
+  },
+  "scripts": {
+    "queue:dashboard": "npx bull-board",
+    "queue:clear": "node -e \"require('./src/services/queueService').clearCache()\"",
+    "cache:clear": "redis-cli FLUSHDB",
+    "cache:stats": "redis-cli INFO memory"
+  }
+} 

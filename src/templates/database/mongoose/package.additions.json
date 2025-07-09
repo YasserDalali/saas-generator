@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "mongoose": "^8.0.3",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/bcryptjs": "^2.4.4"
+  },
+  "scripts": {
+    "db:seed": "node src/scripts/seed.js",
+    "db:migrate": "node src/scripts/migrate.js"
+  }
+} 

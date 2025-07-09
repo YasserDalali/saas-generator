@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/bcryptjs": "^2.4.4"
+  }
+} 

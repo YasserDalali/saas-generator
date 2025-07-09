@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "resend": "^2.1.0"
+  }
+} 
