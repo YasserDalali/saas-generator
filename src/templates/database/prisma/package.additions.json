@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "@prisma/client": "^5.6.0"
+    "@prisma/client": "^6.11.1"
   },
   "devDependencies": {
-    "prisma": "^5.6.0"
+    "prisma": "^6.11.1"
   },
   "scripts": {
     "db:init": "npx prisma init --db --output ../generated/prisma",
@@ -12,4 +12,4 @@
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio"
   }
-} 
+}
