@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+      "stripe": "^18.3.0"
+    },
+    "devDependencies": {}
+}
+  

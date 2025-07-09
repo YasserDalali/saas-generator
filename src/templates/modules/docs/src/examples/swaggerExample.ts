@@ -23,39 +23,7 @@ app.get("/api-docs.json", (req, res) => {
 });
 */
 
-/**
- * @swagger
- * /api/health:
- *   get:
- *     summary: Health check endpoint
- *     description: Returns the health status of the API
- *     tags:
- *       - Health
- *     responses:
- *       200:
- *         description: API is healthy
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 status:
- *                   type: string
- *                   example: "healthy"
- *                 timestamp:
- *                   type: string
- *                   format: date-time
- *                 uptime:
- *                   type: number
- *                   example: 12345
- */
-app.get("/api/health", (req, res) => {
-  res.json({
-    status: "healthy",
-    timestamp: new Date().toISOString(),
-    uptime: process.uptime()
-  });
-});
+
 
 /**
  * @swagger
