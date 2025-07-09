@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Import the 'program' object from the 'commander' package, which is used for building command-line interfaces.
 // Example: You could also import the entire module as 'import * as commander from "commander";'
 import { program } from "commander";

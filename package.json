@@ -1,19 +1,23 @@
 {
   "name": "saas-generator",
   "version": "1.0.0",
+  "description": "A CLI tool to generate a SaaS project with Node.js, Express, and TypeScript. created by Yasser Dalali for personal use.",
   "main": "bin/cli.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "bin": {
-    "saas-generator": "bin/cli.js"
+    "generate-saas": "bin/cli.js"
   },
   "scripts": {
+    "generate-saas": "node bin/cli.js",
     "start": "node bin/cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Yasser Dalali",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^14.0.0",

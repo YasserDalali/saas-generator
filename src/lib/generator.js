@@ -182,7 +182,6 @@ class Generator {
   }
 
   async createProject(projectName, projectPath, config) {
-    const spinner = ora('Creating project structure...').start();
     
     try {
       // Ensure project directory exists
