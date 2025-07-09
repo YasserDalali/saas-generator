@@ -208,10 +208,12 @@ class Generator {
       // Update package.json
       await this.mergePackageJson(projectPath, { ...config, projectName });
       
-      spinner.succeed('Project created successfully!');
+      console.log(chalk.bgGreen.white('Project created successfully!'));
+      // spinner.succeed('Project created successfully!');
       this.showNextSteps(projectName, projectPath);
     } catch (error) {
-      spinner.fail('Failed to create project');
+      console.log(chalk.bgRed.white('Failed to create project'));
+      // spinner.fail('Failed to create project');
       console.error(error);
       throw error;
     }
