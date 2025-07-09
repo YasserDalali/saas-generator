@@ -3,6 +3,7 @@ import cookieParser from "cookie-parser";
 import logger from "morgan";
 import usersRouter from "./routes/users";
 import chalk from "chalk";
+import arcjetMiddleware from "./middleware/arcjet";
 
 const app = express();
 
@@ -11,7 +12,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
+app.use(arcjetMiddleware());
 //? Routes
 app.use("/users", usersRouter);
 
